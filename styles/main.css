@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 100vh;
+  background-image: url("../images/StoryboardFotoEditiert_AndrinSchaerli.png");
+  background-color: #F2CA84;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header nav ul {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  padding: 0;
+  margin: 0;
+}
+header nav ul li {
+  list-style-type: none;
+  color: #ffffff;
+  background-color: #162a45;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-bottom: 2px solid #ffffff;
+}
+header nav ul li h1 {
+  margin: 0;
+}
+
+.navTransparentColumn {
+  grid-column: 1/7;
+  background-color: transparent;
+  border: none;
+}
+
+.navTitleColumn {
+  grid-column: 7/10;
+  border-left: 2px solid #ffffff;
+}
+
+.navHomeColumn {
+  grid-column: 10;
+}
+
+.navGalleryColumn {
+  grid-column: 11;
+}
+
+.navVideoColumn {
+  grid-column: 12;
+}
+
+/*# sourceMappingURL=main.css.map */
