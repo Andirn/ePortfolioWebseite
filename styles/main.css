@@ -1,14 +1,21 @@
+html {
+  font-family: "Times New Roman", Times, serif;
+  color: #ffffff;
+}
+
 body {
   margin: 0;
   padding: 0;
+  border: 0.48vh solid #ffffff;
 }
 
 header {
-  height: 100vh;
+  height: calc(100vh - 0.96vh);
   background-image: url("../images/StoryboardFotoEditiert_AndrinSchaerli.png");
   background-color: #F2CA84;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 25% center;
 }
 header nav ul {
   display: grid;
@@ -18,25 +25,54 @@ header nav ul {
 }
 header nav ul li {
   list-style-type: none;
-  color: #ffffff;
   background-color: #162a45;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  border-bottom: 2px solid #ffffff;
+  height: 4vh;
+  padding-top: 1.5vh;
+  padding-bottom: 1.5vh;
+  border-bottom: 0.48vh solid #ffffff;
+  font-size: 2vmin;
 }
 header nav ul li h1 {
   margin: 0;
 }
+header nav ul li span, header nav ul li a:hover {
+  border-bottom: 0.69vh solid #F2CA84;
+}
+header nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
 
 .navTransparentColumn {
-  grid-column: 1/7;
+  grid-column: 1/6;
   background-color: transparent;
   border: none;
 }
 
+.navTriangleColumn {
+  grid-column: 6;
+  height: calc(3.5vh + 0.48vh);
+  border-bottom: 3.5vh solid transparent;
+  border-top: 0px solid transparent;
+  border-right: calc(3.5vh + 0.48vh) solid #ffffff;
+  background-color: transparent;
+  position: relative;
+  right: 0;
+  padding: 0;
+}
+.navTriangleColumn div {
+  height: calc(3.5vh + 0.24vh);
+  border-bottom: calc(3.5vh - 0.24vh) solid transparent;
+  border-top: 0px solid transparent;
+  border-right: 3.5vh solid #162a45;
+  background-color: transparent;
+  position: relative;
+  right: calc(0px - 3.5vh - 0.48vh);
+  padding: 0;
+}
+
 .navTitleColumn {
   grid-column: 7/10;
-  border-left: 2px solid #ffffff;
 }
 
 .navHomeColumn {
@@ -49,6 +85,31 @@ header nav ul li h1 {
 
 .navVideoColumn {
   grid-column: 12;
+}
+
+main {
+  background-color: #162a45;
+}
+
+.picture {
+  background-image: url("../images/WebsiteStart2.jpg");
+  background-color: #F2CA84;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 45vh;
+  background-position: bottom;
+}
+
+footer {
+  text-align: center;
+  background-color: #162a45;
+  height: 7vh;
+  font-size: 2vmin;
+  padding-top: 3.5vh;
+}
+
+.borderBottom {
+  border-bottom: 0.48vh solid #ffffff;
 }
 
 /*# sourceMappingURL=main.css.map */
