@@ -1,15 +1,4 @@
-$primary-color: #162a45;
-$secondary-color: #ffffff;
-$tertiary-color: #F2CA84;
-$border-width: 0.48vh;
-$nav-padding: 1.5vh;
-$nav-height: 4vh;
-$nav-fullHeight: $nav-height + $nav-padding + $nav-padding;
-$nav-halfHeight: $nav-fullHeight / 2;
-$nav-fontSize: 2vmin;
-$border-halfWidth: $border-width / 2;
-$border-doubleWidth: $border-width * 2;
-$selected-underlineHeight: 0.69vh;
+@import "./variables";
 
 html {
     font-family: 'Times New Roman', Times, serif;
@@ -24,11 +13,9 @@ body {
 
 header {
     height: calc(100vh - #{$border-doubleWidth});
-    background-image: url("../images/StoryboardFotoEditiert_AndrinSchaerli.png");
     background-color: $tertiary-color;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 25% center;
     nav{
         ul{
             display: grid;
@@ -45,6 +32,7 @@ header {
                 font-size: $nav-fontSize;
                 h1 {
                     margin: 0;
+                    font-size: calc(#{$nav-fontSize} + 1vmin);
                 }
                 span, a:hover {
                     border-bottom: $selected-underlineHeight solid $tertiary-color;
@@ -105,15 +93,6 @@ header {
 
 main {
     background-color: $primary-color;
-}
-
-.picture {
-    background-image: url("../images/WebsiteStart2.jpg");
-    background-color: $tertiary-color;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 45vh;
-    background-position: bottom;
 }
 
 footer {

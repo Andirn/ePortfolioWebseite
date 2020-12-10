@@ -11,11 +11,9 @@ body {
 
 header {
   height: calc(100vh - 0.96vh);
-  background-image: url("../images/StoryboardFotoEditiert_AndrinSchaerli.png");
   background-color: #F2CA84;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 25% center;
 }
 header nav ul {
   display: grid;
@@ -30,10 +28,11 @@ header nav ul li {
   padding-top: 1.5vh;
   padding-bottom: 1.5vh;
   border-bottom: 0.48vh solid #ffffff;
-  font-size: 2vmin;
+  font-size: 3vmin;
 }
 header nav ul li h1 {
   margin: 0;
+  font-size: calc(3vmin + 1vmin);
 }
 header nav ul li span, header nav ul li a:hover {
   border-bottom: 0.69vh solid #F2CA84;
@@ -91,20 +90,11 @@ main {
   background-color: #162a45;
 }
 
-.picture {
-  background-image: url("../images/WebsiteStart2.jpg");
-  background-color: #F2CA84;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 45vh;
-  background-position: bottom;
-}
-
 footer {
   text-align: center;
   background-color: #162a45;
   height: 7vh;
-  font-size: 2vmin;
+  font-size: 3vmin;
   padding-top: 3.5vh;
 }
 
