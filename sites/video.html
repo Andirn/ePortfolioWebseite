@@ -9,6 +9,12 @@
     <title>ePortfolio Andrin Schärli</title>
 </head>
 <body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="../index.html">Home + Gallery</a>
+        <a href="gallery.html">Video</a>
+        <span>Location</span>
+    </div>
     <header class="borderBottom">
         <nav>
             <ul>
@@ -19,14 +25,29 @@
                 <li class="navTitleColumn">
                     <h1>Wenigerweiher</h1>
                 </li>
-                <li class="navHomeColumn"><a href="../index.html">Home</a></li>
-                <li class="navGalleryColumn"><a href="gallery.html">Gallery</a></li>
-                <li class="navVideoColumn"><span>Video</span></li>
+                <li class="navHomeColumn"><a href="../index.html">Home + Gallery</a></li>
+                <li class="navGalleryColumn"><a href="gallery.html">Video</a></li>
+                <li class="navVideoColumn"><span>Location</span></li>
+                <li class="mobileMenuColumn" onclick="openNav()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </li>
             </ul>
         </nav>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.083579021557!2d9.411505697052972!3d47.41895973493017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479b1ee05a3fd017%3A0xe1a7cea7a141c020!2sWenigerweiher!5e0!3m2!1sde!2sch!4v1607616442865!5m2!1sde!2sch" width="70%" height="75%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     </header>
     <footer>
         <b>©2020 - Andrin Schärli</b>
     </footer>
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
 </body>
 </html>

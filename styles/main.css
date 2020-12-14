@@ -10,7 +10,7 @@ body {
 }
 
 header {
-  height: calc(100vh - 0.96vh);
+  height: calc(100vh - 0.96vh - 7vh - 3.5vh - 0.48vh);
   background-color: #F2CA84;
   background-repeat: no-repeat;
   background-size: cover;
@@ -42,14 +42,22 @@ header nav ul li a {
   text-decoration: none;
 }
 
+@media (max-width: 810px) {
+  header nav ul li {
+    font-size: calc(3vmin - 1vmin);
+  }
+  header nav ul li h1 {
+    font-size: 3vmin;
+  }
+}
 .navTransparentColumn {
-  grid-column: 1/6;
+  grid-column: 1/4;
   background-color: transparent;
   border: none;
 }
 
 .navTriangleColumn {
-  grid-column: 6;
+  grid-column: 4;
   height: calc(3.5vh + 0.48vh);
   border-bottom: 3.5vh solid transparent;
   border-top: 0px solid transparent;
@@ -71,21 +79,64 @@ header nav ul li a {
 }
 
 .navTitleColumn {
-  grid-column: 7/10;
+  grid-column: 5/8;
 }
 
 .navHomeColumn {
-  grid-column: 10;
+  grid-column: 8/11;
+  text-align: right;
 }
 
 .navGalleryColumn {
   grid-column: 11;
+  text-align: center;
 }
 
 .navVideoColumn {
   grid-column: 12;
+  text-align: left;
 }
 
+.mobileMenuColumn {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  .navTransparentColumn {
+    grid-column: 1/10;
+  }
+
+  .navTriangleColumn {
+    grid-column: 10;
+  }
+
+  .navTitleColumn {
+    display: none;
+  }
+
+  .navHomeColumn {
+    display: none;
+  }
+
+  .navGalleryColumn {
+    display: none;
+  }
+
+  .navVideoColumn {
+    display: none;
+  }
+
+  .mobileMenuColumn {
+    display: list-item;
+    grid-column: 11/13;
+  }
+  .mobileMenuColumn div {
+    width: 35px;
+    height: 5px;
+    margin: 0px 6px 6px;
+    background-color: #ffffff;
+  }
+}
 main {
   background-color: #162a45;
 }
@@ -100,6 +151,64 @@ footer {
 
 .borderBottom {
   border-bottom: 0.48vh solid #ffffff;
+}
+
+iframe {
+  display: block;
+  margin: 0 auto;
+  margin-top: 4vh;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #162a45;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a, .sidenav span {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #F2CA84;
+}
+
+.sidenav span {
+  color: #F2CA84;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

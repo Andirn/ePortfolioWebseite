@@ -1,4 +1,5 @@
 header {
+  height: calc(100vh - 0.96vh);
   background-image: url("../images/Home.png");
   background-position: 25% center;
 }

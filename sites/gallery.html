@@ -9,6 +9,12 @@
     <title>ePortfolio Andrin Schärli</title>
 </head>
 <body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="../index.html">Home + Gallery</a>
+        <span>Video</span>
+        <a href="video.html">Location</a>
+    </div>
     <header class="borderBottom">
         <nav>
             <ul>
@@ -19,14 +25,29 @@
                 <li class="navTitleColumn">
                     <h1>Wenigerweiher</h1>
                 </li>
-                <li class="navHomeColumn"><a href="../index.html">Home</a></li>
-                <li class="navGalleryColumn"><span>Gallery</span></li>
-                <li class="navVideoColumn"><a href="video.html">Video</a></li>
+                <li class="navHomeColumn"><a href="../index.html">Home + Gallery</a></li>
+                <li class="navGalleryColumn"><span>Video</span></li>
+                <li class="navVideoColumn"><a href="video.html">Location</a></li>
+                <li class="mobileMenuColumn" onclick="openNav()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </li>
             </ul>
         </nav>
+        <iframe width="70%" height="75%" src="https://www.youtube-nocookie.com/embed/XhPxeivi4po" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </header>
     <footer>
         <b>©2020 - Andrin Schärli</b>
     </footer>
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
 </body>
 </html>

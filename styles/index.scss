@@ -4,6 +4,7 @@ $main-paddingHeight: $main-padding * 2;
 $main-height: 17vh;
 
 header {
+    height: calc(100vh - #{$border-doubleWidth});
     background-image: url("../images/Home.png");
     background-position: 25% center;
 }
