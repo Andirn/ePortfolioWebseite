@@ -5,7 +5,7 @@ $main-height: 17vh;
 
 header {
     height: calc(100vh - #{$border-doubleWidth});
-    background-image: url("../images/Home.png");
+    background-image: url("../images/Home.jpg");
     background-position: 25% center;
 }
 
@@ -47,8 +47,13 @@ main {
   background-size: cover;
   height: calc(100vh - #{$main-height} - #{$nav-fullHeight} - #{$nav-halfHeight} - #{$border-doubleWidth} - #{$border-doubleWidth});
   background-position: bottom;
-  h2 {
-      margin: 0;
+  img {
+    width: 40%;
+    max-height: calc(100vh - #{$main-height} - #{$nav-fullHeight} - #{$nav-halfHeight} - #{$border-doubleWidth} - #{$border-doubleWidth} - 6vh);
+    display: inline-block;
+    margin: calc(5% - #{$border-doubleWidth});
+    margin-bottom: 0;
+    margin-top: 3vh;
   }
 }
 
@@ -100,6 +105,16 @@ main {
       img {
         height: calc(#{$main-height} - 1.5em - #{$nav-fontSize} - #{$border-width} - #{$border-doubleWidth});
       }
+    }
+  }
+  .picture {
+    img {
+      max-height: calc((100vh - #{$main-height} - #{$nav-fullHeight} - #{$nav-halfHeight} - #{$border-doubleWidth} - #{$border-doubleWidth}) / 2 - 6vh);
+      display: inline-block;
+      width: 80%;
+      margin: calc(10% - #{$border-doubleWidth});
+      margin-bottom: 0;
+      margin-top: 3vh;
     }
   }
 }

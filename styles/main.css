@@ -159,10 +159,9 @@ iframe {
   margin-top: 4vh;
 }
 
-body {
-  font-family: "Lato", sans-serif;
-}
-
+/*body {
+    font-family: "Lato", sans-serif;
+  }*/
 .sidenav {
   height: 100%;
   width: 0;
@@ -176,8 +175,11 @@ body {
   padding-top: 60px;
 }
 
-.sidenav a, .sidenav span {
+.sidenav a {
   padding: 8px 8px 8px 32px;
+}
+
+.sidenav a, .sidenav span {
   text-decoration: none;
   font-size: 25px;
   color: #ffffff;
@@ -185,12 +187,11 @@ body {
   transition: 0.3s;
 }
 
-.sidenav a:hover {
-  color: #F2CA84;
-}
-
-.sidenav span {
-  color: #F2CA84;
+.sidenav span, .sidenav a:hover {
+  border-bottom: 0.69vh solid #F2CA84;
+  padding: 8px 8px 0px 0px;
+  margin-left: 32px;
+  width: fit-content;
 }
 
 .sidenav .closebtn {

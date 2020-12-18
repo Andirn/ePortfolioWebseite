@@ -1,6 +1,6 @@
 header {
   height: calc(100vh - 0.96vh);
-  background-image: url("../images/Home.png");
+  background-image: url("../images/Home.jpg");
   background-position: 25% center;
 }
 
@@ -40,8 +40,13 @@ main article p img {
   height: calc(100vh - 17vh - 7vh - 3.5vh - 0.96vh - 0.96vh);
   background-position: bottom;
 }
-.picture h2 {
-  margin: 0;
+.picture img {
+  width: 40%;
+  max-height: calc(100vh - 17vh - 7vh - 3.5vh - 0.96vh - 0.96vh - 6vh);
+  display: inline-block;
+  margin: calc(5% - 0.96vh);
+  margin-bottom: 0;
+  margin-top: 3vh;
 }
 
 .indexMainContainer {
@@ -88,6 +93,15 @@ main article p img {
   }
   main aside img {
     height: calc(17vh - 1.5em - 3vmin - 0.48vh - 0.96vh);
+  }
+
+  .picture img {
+    max-height: calc((100vh - 17vh - 7vh - 3.5vh - 0.96vh - 0.96vh) / 2 - 6vh);
+    display: inline-block;
+    width: 80%;
+    margin: calc(10% - 0.96vh);
+    margin-bottom: 0;
+    margin-top: 3vh;
   }
 }
 .container {
